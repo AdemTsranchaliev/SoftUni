@@ -22,7 +22,7 @@ namespace _06._Reverse_And_Exclude
                 if (!pred(input[i]))
                 {
                     input.RemoveAt(i);
-
+                    i--;
                 }
             }
             Console.WriteLine(string.Join(" ",input));

@@ -11,11 +11,11 @@ namespace _08._Custom_Comparator
                 {
                     if (a%2!=0&&b%2==0)
                     {
-                        return b;
+                        return 1;
                     }
                     else if(a % 2 == 0 && b % 2 != 0)
                     {
-                        return a;
+                        return -1;
                     }
                     else
                     {
