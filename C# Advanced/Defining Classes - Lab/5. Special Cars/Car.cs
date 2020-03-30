@@ -1,9 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿
 
 namespace CarManufacturer
 {
+    using System;
+
+    using System.Text;
     public class Car
     {
         private string make;
@@ -137,7 +138,8 @@ namespace CarManufacturer
             str.AppendLine($"Make: {this.Make}");
             str.AppendLine($"Model: {this.Model}");
             str.AppendLine($"Year: {this.Year}");
-            str.Append($"Fuel: {this.FuelQuantity:F2}L");
+            str.AppendLine($"HorsePowers: {this.engine.HorsePower}");
+            str.Append($"FuelQuantity: {this.FuelQuantity}");
 
             return str.ToString();
         }
