@@ -1,8 +1,8 @@
 ﻿using System;
 
-namespace CarSalesman
+namespace DateModifier
 {
-    class Program
+    class StartUp
     {
         static void Main(string[] args)
         {
