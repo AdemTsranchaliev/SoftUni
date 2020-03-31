@@ -14,7 +14,7 @@ namespace DefiningClasses
 
             while (command!="Tournament")
             {
-                var sep = command.Split().ToArray();
+                var sep = command.Split(new[] { ' ' },StringSplitOptions.RemoveEmptyEntries).ToArray();
                 var trainerName = sep[0];
                 var pokemonName = sep[1];
                 var element = sep[2];
@@ -36,44 +36,31 @@ namespace DefiningClasses
             command = Console.ReadLine();
             while (command!="End")
             {
+                for (int i = 0; i < trainers.Count; i++)
+                {
+                    if (!trainers[i].Pokemons.Any(x=>x.Element==command))
+                    {
+                        foreach (var item in trainers[i].Pokemons)
+                        {
+                          item.ReduceHealth();
 
-                 GoThrowAllChechIfTherePokemonWithGivenElementAndChange(command, trainers);
-              
+                        }
+                    }
+                    else
+                    {
+                        trainers[i].IncreaceNumberOfBadges();
+                    }
+                }
                 command = Console.ReadLine();
             }
             foreach (var item in trainers)
             {
-              
-                var removePokemons = item.Pokemons.Where(x=>x.Health<=0).ToArray();
-                foreach (var item2 in removePokemons)
-                {
-                    item.Pokemons.Remove(item2);
-                }
-               
+                item.Pokemons.RemoveAll(x => x.Health <= 0);
             }
             trainers.OrderByDescending(x=>x.NumberOfBadges).ToList().ForEach(x => Console.WriteLine($"{x.Name} {x.NumberOfBadges} {x.Pokemons.Count}"));
 
         }
 
-        static void GoThrowAllChechIfTherePokemonWithGivenElementAndChange(string command,List<Trainer> trainers)
-        {
-            for (int i = 0; i < trainers.Count; i++)
-            {
-                var isPokemonWithGivenElement = trainers[i].Pokemons.FirstOrDefault(x=>x.Element==command);
-                if (isPokemonWithGivenElement==null)
-                {
-                    for (int j = 0; j < trainers[i].Pokemons.Count; j++)
-                    {
-                        trainers[i].Pokemons[j].ReduceHealth();
-                    }
-                }
-                else
-                {
-                    trainers[i].IncreaceNumberOfBadges();
-                }
-            }
-
-        }
 
     }
 }
