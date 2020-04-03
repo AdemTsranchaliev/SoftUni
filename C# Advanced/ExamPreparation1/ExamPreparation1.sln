@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1062
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DatingApp", "DatingApp\DatingApp.csproj", "{C3B67FFD-4EEA-4138-A54D-8AD4E0AC3B95}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookWorm", "BookWorm\BookWorm.csproj", "{4438153B-08B5-42D5-B9E5-7F823ACC3884}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rabbits", "Rabbits\Rabbits.csproj", "{D2B9A7A5-5711-4FB2-AB39-6BD730B95515}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C3B67FFD-4EEA-4138-A54D-8AD4E0AC3B95}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3B67FFD-4EEA-4138-A54D-8AD4E0AC3B95}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3B67FFD-4EEA-4138-A54D-8AD4E0AC3B95}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3B67FFD-4EEA-4138-A54D-8AD4E0AC3B95}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4438153B-08B5-42D5-B9E5-7F823ACC3884}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4438153B-08B5-42D5-B9E5-7F823ACC3884}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4438153B-08B5-42D5-B9E5-7F823ACC3884}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4438153B-08B5-42D5-B9E5-7F823ACC3884}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D2B9A7A5-5711-4FB2-AB39-6BD730B95515}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2B9A7A5-5711-4FB2-AB39-6BD730B95515}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2B9A7A5-5711-4FB2-AB39-6BD730B95515}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2B9A7A5-5711-4FB2-AB39-6BD730B95515}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0A715A3E-3B85-4D25-8BAC-F1275E0A9E21}
+	EndGlobalSection
+EndGlobal
